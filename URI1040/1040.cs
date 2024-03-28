@@ -25,8 +25,7 @@ namespace URI
 
             double media = (nota1 + nota2 + nota3 + nota4) / 10;
 
-            if(media == 4.85) //URI arredonda de 4.85 para 4.90
-                media -= 0.05;
+            media = Math.Floor(media * 10) / 10; //arrendonda para baixo.
 
             if(media >= 7.0)
                 Console.WriteLine($"Media: {media:F1}\nAluno aprovado.");
