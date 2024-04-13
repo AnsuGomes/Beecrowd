@@ -18,6 +18,6 @@ class URI
         par.Add(valores[i]);
     }
 
-    Console.WriteLine($"{par.Count} valores positivos");
+    Console.WriteLine($"{par.Count} valores pares");
   }
 }
